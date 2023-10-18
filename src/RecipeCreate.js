@@ -34,19 +34,19 @@ function RecipeCreate({ addRecipe }) {
        <tbody>
           <tr>
              <td>
-              <input name="name" type="text" value={name} onChange={e => setName(e.target.value)} />
+              <input name="name" type="text" value={name} onChange={e => setName(e.target.value)} required />
             </td>
              <td>
-              <input name="cuisine" type="text" value={cuisine} onChange={e => setCuisine(e.target.value)} />
+              <input name="cuisine" type="text" value={cuisine} onChange={e => setCuisine(e.target.value)} required />
             </td>
              <td>
-              <input  name="photo" type="text" value={photo} onChange={e => setPhoto(e.target.value)} />
+              <input  name="photo" type="text" value={photo} onChange={e => setPhoto(e.target.value)} required />
             </td>
             <td>
-              <textarea name="ingredients" value={ingredients} onChange={e => setIngredients(e.target.value)} />
+              <textarea name="ingredients" value={ingredients} onChange={e => setIngredients(e.target.value)} required />
             </td>
             <td>
-              <textarea name="preparation" value={preparation} onChange={e => setPreparation(e.target.value)} />
+              <textarea name="preparation" value={preparation} onChange={e => setPreparation(e.target.value)} required />
             </td>
             <td>
               <button type="submit">Create</button>
